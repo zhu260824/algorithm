@@ -1,0 +1,66 @@
+package cj;
+
+/**
+ * @author zl
+ * @Version 1.0
+ * @Description TODO
+ * @date 2018/12/21  17:42
+ */
+public class Prize {
+    private int id;//奖品id
+    private String prize_name;//奖品名称
+    private int prize_amount;//奖品（剩余）数量
+    private int prize_weight;//奖品权重
+
+    public Prize() {
+    }
+
+    public Prize(int id, String prize_name, int prize_amount, int prize_weight) {
+        this.id = id;
+        this.prize_name = prize_name;
+        this.prize_amount = prize_amount;
+        this.prize_weight = prize_weight;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPrize_name() {
+        return prize_name;
+    }
+
+    public void setPrize_name(String prize_name) {
+        this.prize_name = prize_name;
+    }
+
+    public int getPrize_amount() {
+        return prize_amount;
+    }
+
+    public void setPrize_amount(int prize_amount) {
+        this.prize_amount = prize_amount;
+    }
+
+    public int getPrize_weight() {
+        return prize_weight;
+    }
+
+    public void setPrize_weight(int prize_weight) {
+        this.prize_weight = prize_weight;
+    }
+
+    @Override
+    public String toString() {
+        return "Prize{" +
+            "id=" + id +
+            ", prize_name='" + prize_name + '\'' +
+            ", prize_amount=" + prize_amount +
+            ", prize_weight=" + prize_weight +
+            '}';
+    }
+}
